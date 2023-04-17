@@ -1,0 +1,128 @@
+@import "../../App.scss";
+
+.job {
+  padding: 50px 0px;
+  &__title-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $primary-color;
+  }
+  &__user-div {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: $white;
+  }
+  &__img {
+    top: 55%;
+    left: 50%;
+    width: 39px;
+    height: 44px;
+    object-fit: cover;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  &__title {
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-bottom: 4px;
+    transition: all 0.3s ease;
+  }
+  &__number {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: all 0.3s ease;
+  }
+  &__inner-title {
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  &__info-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  &__icon2 {
+    width: 24px;
+    height: 36px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  &__info-price {
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__list {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__item-span {
+    color: $white;
+    opacity: 0.5;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-right: 10px;
+  }
+  &__item-text {
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  &__decs-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 10px;
+    color: $primary-color;
+  }
+  &__decs-span {
+    width: 100%;
+    max-width: 728px;
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .job {
+    &__inner-title {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    &__item-span {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+@import "../../App.scss";
+
+.delivery {
+  padding: 50px 0px;
+  &__title-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $primary-color;
+  }
+  &__user-div {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: $white;
+  }
+  &__img {
+    top: 55%;
+    left: 50%;
+    width: 39px;
+    height: 44px;
+    object-fit: cover;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  &__title {
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    margin-bottom: 4px;
+    transition: all 0.3s ease;
+  }
+  &__number {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: all 0.3s ease;
+  }
+  &__countiry-box {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $primary-color;
+  }
+  &__countiry-from {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+  }
+  &__countiry-to {
+    display: flex;
+    align-items: center;
+  }
+  &__span {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-right: 10px;
+    color: $primary-color;
+    transition: all 0.3s ease;
+  }
+  &__text {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    transition: all 0.3s ease;
+  }
+  &__info-title {
+    width: 100%;
+    font-size: 18px;
+    max-width: 300px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 10px;
+    color: $primary-color;
+    transition: all 0.3s ease;
+  }
+  &__info-box {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $primary-color;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__item {
+    display: flex;
+    // align-items: center;
+    margin-bottom: 10px;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+  }
+  &__item-text {
+    color: $white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    transition: all 0.3s ease;
+  }
+  &__decs-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 10px;
+    color: $primary-color;
+    transition: all 0.3s ease;
+  }
+  &__decs-span {
+    width: 100%;
+    color: $white;
+    font-size: 16px;
+    max-width: 728px;
+    font-weight: 500;
+    line-height: 22px;
+    transition: all 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .delivery {
+    &__decs-span {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: justify;
+    }
+    &__info-title {
+      font-size: 16px;
+    }
+  }
+}

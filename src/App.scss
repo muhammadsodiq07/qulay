@@ -1,0 +1,118 @@
+// FONTS -> Montserrat = = = = = = = = = = = =
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*  Scss  */
+@import "./assets/sass/main.scss";
+
+/* ================================== HTML - BODY - TAGS ========================================== */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $f-family-Montserrat !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #212024;
+
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: $primary-color;
+  }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: $primary-color;
+  }
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+span {
+  display: inline-block;
+}
+a {
+  color: $black;
+  display: inline-block;
+  text-decoration: none;
+  background: transparent;
+}
+input,
+select {
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+/* ==================================== APP - CONTAINER ======================================== */
+.app {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column;
+}
+.main {
+  width: 100%;
+  flex-grow: 1;
+  transition: all 0.3s ease;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1460px;
+  transition: all 0.3s ease;
+}
+.disabled {
+  opacity: 0.5;
+  cursor: default;
+  &:hover {
+    color: $white !important;
+    background: transparent !important;
+  }
+}
+/* ============================== CONTAINER MEDIA PART ================================== */
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}

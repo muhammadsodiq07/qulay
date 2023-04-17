@@ -13,6 +13,8 @@ function App() {
         <div>
           <Routes>
             <Route path="/job" element={<Job />} />
+            <Route path="/car" element={<CarPost />} />
+            <Route path="/delivery" element={<DeliveryMain />} />
           </Routes>
           {location.pathname !== undefined ? (
             location.pathname.split("/").at(-3) === "delivery" ? (
